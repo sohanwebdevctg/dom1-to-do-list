@@ -16,9 +16,7 @@ const inputFunBtn = () => {
       let tr = document.createElement('tr');
       tr.innerHTML = `
       <th>#</th>
-      <td>
-        <input type="checkbox" class="checkbox" />
-      </td>
+      <td><input type="checkbox" class="checkbox" /></td>
       <td>${inputValue}</td>
       <td><button onclick="deleteFunBtn(this)" class="btn btn-sm bg-red-500 text-white hover:bg-red-500">Small</button></td>
       `
@@ -41,7 +39,20 @@ const deleteFunBtn = (btnData) => {
   tbody.removeChild(tr);
 
   // success message
-  alert('successfully deleted data')
+  alert('successfully deleted data');
 
+}
 
+const deleteCheckFunBtn = () => {
+
+  // catch tbody data
+  let checkLists = document.querySelectorAll("input[type='checkbox']:checked");
+  
+  //loop all checkLists
+  checkLists.forEach(checkList => {
+    let td = checkList.parentNode;
+    let tr = td.parentNode;
+    let tbody = tr.parentNode;
+    tbody.removeChild(tr);
+  })
 }
