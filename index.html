@@ -20,10 +20,10 @@
   <main class="container mx-auto">
     <!-- input section start -->
      <div class="py-5 bg-green-500 flex flex-col sm:flex-row justify-center items-center mt-5 gap-2">
-      <input type="text" placeholder="Type here" class="input input-bordered w-3/4 sm:w-1/3" />
+      <input type="text" placeholder="white your to do list" class="input input-bordered w-3/4 sm:w-1/3" id="inputData" />
       <!-- button section start -->
       <span>
-        <button class="btn btn-error text-white">Add Data</button>
+        <button onclick="inputFunBtn()" class="btn btn-error text-white">Add Data</button>
         <button class="btn btn-error text-white">Deleted Checked</button>
       </span>
       <!-- button section end -->
@@ -41,17 +41,10 @@
             <th class="font-bold">Action</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- row section start -->
-          <tr>
-            <th>1</th>
-            <td>
-              <input type="checkbox" class="checkbox" />
-            </td>
-            <td>Quality Control Specialist</td>
-            <td><button class="btn btn-sm bg-red-500 text-white hover:bg-red-500">Small</button></td>
-          </tr>
-          <!-- row section end -->
+        <tbody id="tableData">
+         
+          
+          
         </tbody>
       </table>
     </div>
