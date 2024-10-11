@@ -1,1 +1,1 @@
-* ### this is my dom1 project.her i show to-do-list item
+* ### this is my dom1 project. Her i show to-do-list item.
